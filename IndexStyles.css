@@ -1,0 +1,106 @@
+body {
+    background-color: #666666;
+    color: #e0e0e0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navbar {
+    position: fixed;
+    background-color: #280000;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    top: 0px;
+    left: 0px;
+    align-items: center;
+    display: flex;
+    font-size: 1.5em;
+}
+
+a.nav:link {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 10px;
+}
+
+a.nav:visited {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 10px;
+}
+
+a.nav:hover {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 10px;
+}
+
+#row0, #row1, #row2 {
+    margin: 4px;
+}
+
+.col0, .col1, .col2 {
+    width: 60px;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    margin: 1px;
+    padding: 10px;
+}
+
+#arrowL {
+    position: fixed;
+    top: 30%;
+    left: 20%;
+    padding: 5px;
+    width: 5%;
+}
+
+#arrowR {
+    position: fixed;
+    top: 30%;
+    right: 20%;
+    padding: 5px;
+    width: 5%;
+}
+
+a:link {
+    color: #280000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #280000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #280000;
+    text-decoration: none;
+}
+
+#credits {
+    font-size: 11px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background-color: #666666;
+    color: #280000;
+    font-family: "serif";
+    font-size: 22px;
+}
+
+h2 {
+    color: #280000;
+}
