@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Isabelle's Site!</title>
+    <link rel="stylesheet" type="text/css" href="IndexStyles.css">
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html" class="nav">Home</a>
+        <a href="https://rtfan01.github.io/RecipeBook/index.html" class="nav">Recipes</a>
+        <a href="TicTacToe.html" class="nav">Tic Tac Toe</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h1>Hello! This is an index of all my pages!</h1>
+    <div>
+        <button id="arrowL"><</button>
+    </div>
+    <div>
+        <button id="arrowR">></button>
+    </div>
+    <br>
+    <div id="projectDiv">
+        <h2>Recipe Book</h2>
+        <p>This website contains some of my favorite recipes. Check it out <a href="https://rtfan01.github.io/RecipeBook/index.html">here!</a></p>
+    </div>
+    <script>
+        var LB = document.getElementById("arrowL");
+        var RB = document.getElementById("arrowR");
+        var changingDiv = document.getElementById("projectDiv");
+        var number = 0
+
+        var projectOne = "<h2>Recipe Book</h2>\n" +
+            "        <p>This website contains some of my favorite recipes. Check it out <a href=\"https://rtfan01.github.io/RecipeBook/index.html\">here!</a></p>"
+
+        var projectTwo = "<h2>Tic Tac Toe</h2>\n" +
+            "        <p>This webpage uses javascript to bring you a classic game of tic tac toe. Check it out <a href=\"TicTacToe.html\">here!</a></p>"
+
+        var onLBClick = function () {
+            if (number === 0) {
+                number = 1
+                changingDiv.innerHTML = projectTwo
+            } else if (number === 1) {
+                number = 0
+                changingDiv.innerHTML = projectOne
+            }
+        };
+
+        var onRBClick = function () {
+            if (number === 0) {
+                number = 1
+                changingDiv.innerHTML = projectTwo
+            } else if (number === 1) {
+                number = 0
+                changingDiv.innerHTML = projectOne
+            }
+        };
+
+        LB.addEventListener("click", onLBClick)
+        RB.addEventListener("click", onRBClick)
+    </script>
+</body>
+</html>
