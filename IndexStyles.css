@@ -104,3 +104,32 @@ button {
 h2 {
     color: #280000;
 }
+
+.GoToIndex {
+    position: fixed;
+    bottom: 10%;
+    right: 0%;
+    padding: 10px;
+    width: 10%;
+    background-color: #424242;
+    border: 2px solid #280000;
+}
+
+#height {
+    bottom: 17%;
+}
+
+.indexLink:link {
+    color: #280000;
+    text-decoration: none;
+}
+
+.indexLink:hover {
+    color: #280000;
+    text-decoration: none;
+}
+
+.indexLink:visited {
+    color: #280000;
+    text-decoration: none;
+}
