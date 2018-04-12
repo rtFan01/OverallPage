@@ -1,97 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Isabelle's Site!</title>
-    <link rel="stylesheet" type="text/css" href="IndexStyles.css">
-</head>
-<body>
-    <div id="navbar">
-        <a href="index.html" class="nav">Home</a>
-        <a href="https://rtfan01.github.io/RecipeBook/index.html" class="nav">Recipes</a>
-        <a href="TicTacToe.html" class="nav">Tic Tac Toe</a>
-        <a href="https://rtfan01.github.io/NumberGames/DiceRoller.html" class="nav">Dice Roller</a>
-        <a href="https://rtfan01.github.io/NumberGames/RandomNumberGameOne.html" class="nav">Number Game (0 - 10)</a>
-        <a href="https://rtfan01.github.io/NumberGames/RandomNumberGameTwo.html" class="nav">Number Game (0 - 100)</a>
-    </div>
-    <br>
-    <br>
-    <br>
-    <h1>Hello! This is an index of all my pages!</h1>
-    <div>
-        <button id="arrowL"><</button>
-    </div>
-    <div>
-        <button id="arrowR">></button>
-    </div>
-    <br>
-    <div id="projectDiv">
-        <h2>Recipe Book</h2>
-        <p>This website contains some of my favorite recipes. Check it out <a href="https://rtfan01.github.io/RecipeBook/index.html">here!</a></p>
-    </div>
-    <div class="GoToIndex">Go to main <a href="index.html" class="indexLink">index</a></div>
-    <div class="GoToIndex" id="height">Go to <a href="IndexStyles.css" class="indexLink">CSS</a></div>
-    <script>
-        var LB = document.getElementById("arrowL");
-        var RB = document.getElementById("arrowR");
-        var changingDiv = document.getElementById("projectDiv");
-        var number = 0
+    <head>
+        <meta charset="UTF-8">
+        <title>Isabelle's Site!</title>
+        <link rel="stylesheet" type="text/css" href="IndexStyles.css">
+    </head>
+    <body>
+        <div id="navbar">
+            <a href="index.html" class="nav">Home</a>
+            <a href="https://rtfan01.github.io/RecipeBook/index.html" class="nav">Recipes</a>
+            <a href="TicTacToe.html" class="nav">Tic Tac Toe</a>
+            <a href="MadLibsProj.html" class="nav">Mad Libs</a>
+            <a href="https://rtfan01.github.io/NumberGames/DiceRoller.html" class="nav">Dice Roller</a>
+            <a href="https://rtfan01.github.io/NumberGames/RandomNumberGameOne.html" class="nav">Number Game (0 - 10)</a>
+            <a href="https://rtfan01.github.io/NumberGames/RandomNumberGameTwo.html" class="nav">Number Game (0 - 100)</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h1>Hello! This is an index of all my pages!</h1>
+        <div>
+            <button id="arrowL"><</button>
+        </div>
+        <div>
+            <button id="arrowR">></button>
+        </div>
+        <br>
+        <div id="projectDiv">
+            <h2>Recipe Book</h2>
+            <p>This website contains some of my favorite recipes. Check it out <a href="https://rtfan01.github.io/RecipeBook/index.html">here!</a></p>
+        </div>
+        <div class="GoToIndex">Go to main <a href="index.html" class="indexLink">index</a></div>
+        <div class="GoToIndex" id="height">Go to <a href="IndexStyles.css" class="indexLink">CSS</a></div>
+        <script>
+            var LB = document.getElementById("arrowL");
+            var RB = document.getElementById("arrowR");
+            var changingDiv = document.getElementById("projectDiv");
+            var number = 0
 
-        var projectOne = "<h2>Recipe Book</h2>\n" +
-            "        <p>This website contains some of my favorite recipes. Check it out <a href=\"https://rtfan01.github.io/RecipeBook/index.html\">here!</a></p>"
+            var projectOne = "<h2>Recipe Book</h2>\n" +
+                "        <p>This website contains some of my favorite recipes. Check it out <a href=\"https://rtfan01.github.io/RecipeBook/index.html\">here!</a></p>"
 
-        var projectTwo = "<h2>Tic Tac Toe</h2>\n" +
-            "        <p>This webpage uses javascript to bring you a classic game of tic tac toe. Check it out <a href=\"TicTacToe.html\">here!</a></p>"
+            var projectTwo = "<h2>Tic Tac Toe</h2>\n" +
+                "        <p>This webpage uses javascript to bring you a classic game of tic tac toe. Check it out <a href=\"TicTacToe.html\">here!</a></p>"
 
-        var projectThree = "<h2>Dice Roller</h2>\n" +
-            "        <p>Utilize the Javascript pseudo-random number generator, and roll some dice! Check it out <a href=\"https://rtfan01.github.io/NumberGames/DiceRoller.html\">here!</a></p>"
+            var projectThree = "<h2>Dice Roller</h2>\n" +
+                "        <p>Utilize the Javascript pseudo-random number generator, and roll some dice! Check it out <a href=\"https://rtfan01.github.io/NumberGames/DiceRoller.html\">here!</a></p>"
 
-        var projectFour = "<h2>Number Guessing Game (0 - 10)</h2>\n" +
-            "        <p>Play a quick game of 'Guess-the-Number'! Check it out <a href=\"https://rtfan01.github.io/NumberGames/RandomNumberGameOne.html\">here!</a></p>"
+            var projectFour = "<h2>Number Guessing Game (0 - 10)</h2>\n" +
+                "        <p>Play a quick game of 'Guess-the-Number'! Check it out <a href=\"https://rtfan01.github.io/NumberGames/RandomNumberGameOne.html\">here!</a></p>"
 
-        var projectFive = "<h2>Number Guessing Game (0 - 100)</h2>\n" +
-            "        <p>Play a quick game of 'Guess-the-Number'! Check it out <a href=\"https://rtfan01.github.io/NumberGames/RandomNumberGameTwo.html\">here!</a></p>"
+            var projectFive = "<h2>Number Guessing Game (0 - 100)</h2>\n" +
+                "        <p>Play a quick game of 'Guess-the-Number'! Check it out <a href=\"https://rtfan01.github.io/NumberGames/RandomNumberGameTwo.html\">here!</a></p>"
 
-        var onLBClick = function () {
-            if (number === 0) {
-                number = 4
-                changingDiv.innerHTML = projectFive
-            } else if (number === 1) {
-                number = 0
-                changingDiv.innerHTML = projectOne
-            } else if (number === 2) {
-                number = 1
-                changingDiv.innerHTML = projectTwo
-            } else if (number === 3) {
-                number = 2
-                changingDiv.innerHTML = projectThree
-            } else if (number === 4) {
-                number = 3
-                changingDiv.innerHTML = projectFour
-            }
-        };
+            var projectSix = "<h2>Mad Libs</h2>\n" +
+                "        <p>Play a quick game of 'Mad Libs'! Check it out <a href=\"MadLibsProj.html\">here!</a></p>"
 
-        var onRBClick = function () {
-            if (number === 0) {
-                number = 1
-                changingDiv.innerHTML = projectTwo
-            } else if (number === 1) {
-                number = 2
-                changingDiv.innerHTML = projectThree
-            } else if (number === 2) {
-                number = 3
-                changingDiv.innerHTML = projectFour
-            } else if (number === 3) {
-                number = 4
-                changingDiv.innerHTML = projectFive
-            } else if (number === 4) {
-                number = 0
-                changingDiv.innerHTML = projectOne
-            }
-        };
+            var onLBClick = function () {
+                if (number === 0) {
+                    number = 5
+                    changingDiv.innerHTML = projectSix
+                } else if (number === 1) {
+                    number = 0
+                    changingDiv.innerHTML = projectOne
+                } else if (number === 2) {
+                    number = 1
+                    changingDiv.innerHTML = projectTwo
+                } else if (number === 3) {
+                    number = 2
+                    changingDiv.innerHTML = projectThree
+                } else if (number === 4) {
+                    number = 3
+                    changingDiv.innerHTML = projectFour
+                } else if (number === 5) {
+                    number = 4
+                    changingDiv.innerHTML = projectFive
+                }
+            };
 
-        LB.addEventListener("click", onLBClick)
-        RB.addEventListener("click", onRBClick)
-    </script>
-</body>
+            var onRBClick = function () {
+                if (number === 0) {
+                    number = 1
+                    changingDiv.innerHTML = projectTwo
+                } else if (number === 1) {
+                    number = 2
+                    changingDiv.innerHTML = projectThree
+                } else if (number === 2) {
+                    number = 3
+                    changingDiv.innerHTML = projectFour
+                } else if (number === 3) {
+                    number = 4
+                    changingDiv.innerHTML = projectFive
+                } else if (number === 4) {
+                    number = 5
+                    changingDiv.innerHTML = projectSix
+                } else if (number === 5) {
+                    number = 0
+                    changingDiv.innerHTML = projectOne
+                }
+            };
+
+            LB.addEventListener("click", onLBClick)
+            RB.addEventListener("click", onRBClick)
+        </script>
+    </body>
 </html>
